@@ -1,7 +1,7 @@
 import sendgrid
 from sendgrid.helpers.mail import Mail
 
-api_key = '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'
+api_key = 'YOUR SENDGRID API KEY'
 
 def send_email(sender_email, recipient_email, subject, message):
     # Create a Mail object
@@ -19,4 +19,4 @@ def send_email(sender_email, recipient_email, subject, message):
     except Exception as e:
         print('Error sending email:', str(e))
 
-send_email('povodyrshop@gmail.com', 'povodyrshop@gmail.com', 'Hello', 'Bla bla')
+send_email('SENDER EMAIL', 'RECEIVER EMAIL', 'SUBJECT', 'BODY')
